@@ -1,0 +1,19 @@
+---
+case:
+ case-name: examplecase1
+ text-decription: Some piece of text about test case if it needs
+ action-runner: example_actions.py
+
+params: &common-params
+  text: examplecase1 test
+
+actions:
+ - action: action-one
+   params: *common-params
+   text2: text for action one
+ - action: action-two
+   params: *common-params
+   text2: text for action two
+ - action: action-tree
+   params: *common-params   
+   text2: text for action tree
